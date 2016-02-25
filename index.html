@@ -1,0 +1,250 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/dc.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+	<script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
+</head>
+
+<body>
+
+	<div class='container' id='main-container'>
+		<div class='content'>
+			<div class='container' >
+				<h1>Syrian Refugee Crisis Visualisation</h1>
+				<h4 class="names">by Meeshu Agnihotri, Nilaksh Das, Omid Elliyoun, Swarnika Prakash</h4>
+				<div class='row-fluid'>
+					<div class= 'intro span12' id='intro'>
+					<p>To escape the violence of Syrian Civil War, <span class="dramatic">more than four million</span> Syrian refugees have fled the country to neighboring Turkey, Lebanon, Jordan, and Iraq, while thousands have also ended up in more distant countries of the Caucasus, the Persian Gulf, North Africa and Europe. More than double this number are internally displaced within Syria and live in horrific conditions. A number of international and local non-profit agencies are working towards providing refugees a better way to live with the help of international aid.
+</p><p>
+The following visualization is aimed to help you understand the gravity of the situation, by visualizing the number of violent events and the ensuing increase in number of refugees.
+</p>
+					</div>
+					<hr class="single-rule" style="width: 88%; text-align: center; margin: 50px auto 50px;">
+
+					<div class='row col-md-12' style="margin-bottom: 60px;">
+						<div class="col-md-7 vis-column col-md-offset-1">
+
+
+						<div class="row">
+							<div class='col-md-12'>
+									<div class='time-graph' id='dc-violent-events'>
+										<h3>Timeline of violent events in Syria</h3>
+										<h6 style="opacity: 0.5;">dragging on the timeline would show the corresponding range of dates on the map and following charts.</h6>
+									</div>
+								</div>
+						</div>
+
+						<div class='row'>
+							<div class='map-graph col-md-12 text-center' id='dc-map-graph'>
+								<div id="map-container">
+									<h3>Violence in Syria <br><span class="map-date" id="map-date"></div></h3>
+								</div>
+							</div>
+						<div class='row'>
+							<div class='refugee-graph' id="dc-refugees-all">
+								<h3>Refugees from Syria</h3>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='refugee-country-graphs'>
+								<h3>Refugees taking asylum in neighbouring countries</h3>
+									<div id="dc-refugees-turkey"><h5 style="margin-left: 80px;">Turkey</h5></div>
+									<div id="dc-refugees-jordan"><h5>Jordan</h5></div>
+									<div id="dc-refugees-iraq"><h5>Iraq</h5></div>
+									<div id="dc-refugees-egypt"><h5>Egypt</h5></div>
+							</div>
+						</div>
+						<!-- <div class="row">
+							<div class= 'demo-graph col-md-12' id='demo-bar-charts'>
+									<div class='bar-graph col-md-3' id='demo-bar4' style='height:320px;'>
+										<h5>Turkey</h5>
+									</div>
+
+									<div class='bar-graph col-md-3' id='demo-bar3'style='height:320px;'>
+										<h5>Jordan</h5>
+									</div>
+
+									<div class='bar-graph col-md-3' id='demo-bar2' style='height:320px;'>
+										<h5>Iraq</h5>
+									</div>
+
+									<div class='bar-graph col-md-3' id='demo-bar1' style='height:320px;'>
+										<h5>Egypt</h5>
+									</div>
+							</div>
+						</div> -->
+					</div>
+
+					<div class="col-md-3 col-md-offset-1">
+
+					<h3>Stories</h3>
+					<div class="news">
+
+						<div class="news-item">
+						 <a  href="http://www.cnn.com/2013/09/12/world/meast/lebanon-syria-refugees-reporters-notebook/" target="blank">
+						   <img class="img-responsive" src="http://i2.cdn.turner.com/cnnnext/dam/assets/130912122300-lebanon-syria-refugee-02-horizontal-large-gallery.jpg" alt="Klematis" >
+						 <p class="desc">7-year-old's story shows pain, worry of Syrian refugees</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="http://fm4.orf.at/stories/1705396/" target="blank">
+						   <img class="img-responsive" src="http://fm4.orf.at/v2static/storyimages/site/fm4/20120939/Sali_body.jpg" alt="Klematis" >
+						 <p class="desc">A personal story: Sali, a 13 year old Syrian refugee</p></a>
+						</div>
+
+						<div class="news-item">
+						 <a  href="http://www.nbcnews.com/storyline/syrias-suffering-families/fear-freedom-syrian-brothers-share-journey-america-n441831" target="blank">
+						   <img class="img-responsive" src="http://media2.s-nbcnews.com/j/newscms/2015_35/1191141/ss-150824-syria-violence-03_ef84e4d2eab59f9e6fddca642a8ec9b5.nbcnews-ux-600-480.jpg" alt="Klematis" >
+						 <p class="desc">From Fear to Freedom: Syrian Brothers Share Journey To America</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="https://www.worldvision.ca/ourwork/Our-Stories/Pages/Syrian-Refugees-Tell-Their-Stories.aspx" target="blank">
+						   <img class="img-responsive" src="https://www.worldvision.ca/ourwork/Our-Stories/PublishingImages/SyrianRefugeesTellTheirStories3.jpg" alt="Klematis" >
+						 <p class="desc">OUR STORIES : Syrian Refugee Stories</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="http://www.takepart.com/article/2015/09/28/hony-refugee" target="blank">
+						   <img class="img-responsive" src="http://www.takepart.com/sites/default/files/styles/large/public/hony-refugee.jpg?itok=arK0aR7Q" alt="Klematis" >
+						 <p class="desc">'Humans of New York' Tells Heartbreaking Story of Syrian Refugee</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="http://www.nytimes.com/2015/11/24/us/syrian-refugees-cling-to-a-longtime-haven-in-michigan.html?_r=0" target="blank">
+						   <img class="img-responsive" src="http://static01.nyt.com/images/2015/11/23/us/24refugees-web1/24refugees-web1-master675.jpg" alt="Klematis" >
+						 <p class="desc">A Chill Grips a Michigan Haven for Syrian Families</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="http://ngm.nationalgeographic.com/2015/03/syrian-refugees/salopek-text" target="blank">
+						   <img class="img-responsive" src="http://s.ngm.com/2015/03/syrian-refugees/img/syrian-refugees-opener-615.jpg" alt="Klematis" >
+						 <p class="desc">Fleeing Terror, Finding Refuge</p></a>
+						</div>
+
+						<div class="news-item">
+						 <a  href="http://asylumaccess.org/stories/syrian-refugee-family-story/" target="blank">
+						   <img class="img-responsive" src="http://asylumaccess.org/wp-content/uploads/2014/07/Rena-Effendi-MarieClaire-600x275.jpg" alt="Klematis" >
+						 <p class="desc">A Syrian refugee family's story</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="https://medium.com/@humansofnewyork/humans-of-new-york-refugee-stories-243336f4adeb#.6ts60tufd" target="blank">
+						   <img class="img-responsive" src="https://cdn-images-2.medium.com/max/800/1*0EWSANT7R3rNSzR1O0vVcg.jpeg" alt="Klematis" >
+						 <p class="desc">Humans of New York Refugee Stories</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="https://www.oxfamireland.org/blog/syrian-refugee-reema" target="blank">
+						   <img class="img-responsive" src="https://www.oxfamireland.org/sites/default/files/syria-reema-blog-1.jpg" alt="Klematis" >
+						 <p class="desc">Reema's story - a 12 Year old Syrian refugee in Lebanon</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="http://leaderpost.com/news/local-news/lives-interrupted-a-syrian-refugee-tells-his-familys-resettlement-story-in-his-own-words" target="blank">
+						   <img class="img-responsive" src="http://wpmedia.leaderpost.com/2015/12/regina-sk-november-30-2015-hani-al-moulia-c-a-22-year.jpeg?quality=60&strip=all&w=840&h=630&crop=1" alt="Klematis" >
+						 <p class="desc">Lives interrupted</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="http://www.independent.co.uk/news/world/europe/syrian-refugee-tells-harrowing-story-of-journey-to-europe-i-fell-in-the-seai-thought-i-would-die-10457279.html" target="blank">
+						   <img class="img-responsive" src="http://static.independent.co.uk/s3fs-public/styles/story_large/public/thumbnails/image/2015/08/08/23/Lesbos-Getty.jpg" alt="Klematis" >
+						 <p class="desc">Syrian refugee tells harrowing story of journey to Europe: 'I fell in the sea... I thought I would die'</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="http://news.sky.com/story/1553999/syrian-refugees-stories-of-fear-and-hope" target="blank">
+						   <img class="img-responsive" src="http://media.skynews.com/media/images/generated/2015/9/16/418648/default/v2/refugees-15-hhadfield-2015-1-736x414.jpg" alt="Klematis" >
+						 <p class="desc">Syrian Refugees' Stories Of Fear And Hope</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="https://www.wort.lu/en/luxembourg/life-in-limbo-the-asylum-waiting-game-52c51990e4b01e43aa17d92f" target="blank">
+						   <img class="img-responsive" src="http://blobsvc.wort.lu/picture/f56cb201de052d4e917d1519fd06dfb9/738/413/wortv3/0e2925aad8873408b04fa5430a6aef5a35ae5bb5" alt="Klematis" >
+						 <p class="desc">Life in limbo - the asylum waiting game</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="https://www.wort.lu/en/luxembourg/syrian-refugee-tells-his-story-fleeing-assad-to-start-again-in-luxembourg-54f986d00c88b46a8ce54d65" target="blank">
+						   <img class="img-responsive" src="http://blobsvc.wort.lu/picture/405668bdc9a54538e060a3b61b4fb665/860/484/wortv3/1a7da513343ec7c0dc0aa13450146da332a60149" alt="Klematis" >
+						 <p class="desc">Fleeing Assad to start again in Luxembourg</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="https://www.wort.lu/en/community/finding-refuge-in-luxembourg-a-new-community-is-growing-in-luxembourg-556d708e0c88b46a8ce5a60e" target="blank">
+						   <img class="img-responsive" src="http://blobsvc.wort.lu/picture/e188fbc6542cac122949a9d13fe874ae/700/466/wortv3/fab4231089e4f0483e57bef40021c2afb2243e07" alt="Klematis" >
+						 <p class="desc">A new community is growing in Luxembourg</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="https://www.wort.lu/en/luxembourg/luxembourg-offers-hope-to-children-living-in-conflict-zones-519b75eae4b0d9545be9e6ff" target="blank">
+						   <img class="img-responsive" src="http://blobsvc.wort.lu/picture/23ef16b98233997695ecd7a75e9a336f/860/484/wortv3/90d4404ce26017340640524c89a7b01ee9ed6da7" alt="Klematis" >
+						 <p class="desc">Luxembourg offers hope to children living in conflict zones</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="https://www.wort.lu/en/community/syrian-stories-five-years-to-prove-himself-558527ef0c88b46a8ce5ba76" target="blank">
+						   <img class="img-responsive" src="http://blobsvc.wort.lu/picture/41294a29b949f404e330ed7e354cf9ba/860/484/wortv3/5cd23eab3a94f9e2af0debeb2d2bf4a03b8edf88" alt="Klematis" >
+						 <p class="desc">Five years to prove himself</p></a>
+						</div>
+						<div class="news-item">
+						 <a  href="http://qz.com/502025/an-aid-worker-tells-the-harrowing-story-of-one-syrian-familys-escape-to-greece/" target="blank">
+						   <img class="img-responsive" src="https://qzprod.files.wordpress.com/2015/09/rts150w-e1442407158300.jpg?quality=80&strip=all&w=1600" alt="Klematis" >
+						 <p class="desc">MILES TO GO</p></a>
+						</div>
+						</div>
+
+					</div>
+</div>
+</div> <!-- end of main row -->
+
+<div class="row">
+
+					<div class="col-12-md lp col-md-offset-1 shrink">
+
+					<div class='row' id="last-section">
+						<div class="col-12-md">
+
+							<h3 class="pull-left clear-fix"> Related news articles<br><span class="map-date" id="map-date"></h3>
+								<a id="more-news" class="btn-lg btn-default pull-right">More news articles</a>
+
+						<!-- <h5 style="float: right;"><a id="more-news" target="blank">more news articles...</a></h5> -->
+					</div>
+				</div>
+
+<div class="row" >
+<div class="col-12-md">
+
+							<div class='table-graph col-md-12' id='url-preview' >
+
+                                <table class='table table-hover dc-data-table' id='dc-table-graph'>
+
+                                </table>
+                            </div>
+													</div>
+												</div>
+
+
+
+
+											</div><!--column-->
+										</div><!--second row-->
+
+
+		</div><!--container-->
+
+				</div><!--content-->
+			</div> <!--main container-->
+
+		</div>
+	</div>
+<style>
+  .dc-table-group{visibility:collapse}
+</style>
+	<script src="js/vendor/jquery-1.11.2.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/d3.v3.min.js"></script>
+	<script src="js/vendor/crossfilter.js"></script>
+	<script src="js/vendor/async.js"></script>
+	<script src="js/vendor/dc.js"></script>
+	<script src="js/vendor/topojson.v1.min.js"></script>
+	<script src="js/vendor/nv.d3.min.js"></script>
+	<script src="js/amchartmain.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

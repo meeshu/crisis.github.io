@@ -1,0 +1,171 @@
+body {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-family: georgia;
+
+
+}
+
+rect.extent{
+	color: grey;
+	opacity:0.4;
+}
+
+#dc-refugees-turkey {
+	clear: left;
+}
+
+
+
+#right{
+	background-color: #000000;
+}
+
+.refugee-country-graphs h5 {
+	text-align: center;
+}
+
+svg#map path {
+	fill: #fffbe0;
+	stroke: #000000;
+	/*margin-top: -22px;
+	margin-left: -22px;*/
+	display: none;
+}
+#map-container {
+	clear: both;
+	background: url("../img/bg.png") no-repeat center center;
+	background-position: 70px 60px;
+}
+
+svg#map circle {
+	fill: #ffb400;
+	stroke: #ffb400;
+	fill-opacity: 0.2;
+	stroke-opacity: 0.5;
+}
+
+svg#map circle:hover {
+	fill-opacity: 0.5;
+	stroke-opacity: 0.8;
+}
+
+.container h1 {
+	font-weight: 500;
+}
+
+h4.names {
+	font-size: .9em;
+	font-weight: 300;
+}
+
+
+
+/************news sidebar*************/
+div.news{
+    padding: 5px;
+		margin-left: 0;
+		padding-left: 0;
+    /*border: 2px solid white;*/
+    height: 1000px;
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
+.news-item img { -webkit-filter: grayscale(1);
+  filter: grayscale(1);}
+	.news-item img:hover { -webkit-filter: grayscale(0);
+	  filter: grayscale(0);}
+
+	.news-item a {
+		text-decoration: none;
+		color: #111;
+		/*font-style: italic;*/
+	}
+
+.news-item {
+	margin-bottom: 30px;
+}
+
+span.map-date {
+	font-style: italic;
+	font-weight: 100;
+	font-size: 0.7em;
+	color: #555;
+}
+#url-preview{
+
+    max-height: 400px;
+    overflow-y: scroll;
+
+}
+
+#map-container h3 {
+	text-align: left;
+}
+
+
+.single-rule {
+	border-top: 1px solid #929292;
+}
+
+
+span.dramatic {
+	font-weight: bold;
+
+}
+
+#into p {
+	font-size: 1.5em;
+}
+
+#url-preview a {
+	text-decoration: none;
+	color: #333;
+}
+
+#url-preview {
+	margin-top: 20px;
+}
+
+div#urls {
+	clear: both;
+}
+
+div.shrink {
+	width: 85% !important;
+}
+div.lp {
+	padding-left: 30px;
+}
+
+#more-news {
+font-size: .9em;
+margin-top: 30px;
+border: 1px solid #626262;}
+
+a#more-news, a#more-news:hover {
+	text-decoration: none;
+}
+
+a#more-news:hover {
+	color: #6ec0db;
+	border-color: #6ec0db;
+	background-color: #fff;
+}
+
+span.news-date {
+	color: #5db0ca;
+	padding-right: 25px;
+	font-style: italic;
+	font-weight: 100;
+	font-size: .9em;
+}
+
+table tr.dc-table-row  td{
+	line-height: 37px;
+	display: block;
+	width: 940px;
+	white-space: nowrap;
+	overflow: hidden;
+}
